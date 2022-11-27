@@ -1,6 +1,7 @@
+import type { NuxtConfig } from '@nuxt/types'
 import MyModule from '../'
 
-export default {
+const config: NuxtConfig = {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -19,3 +20,5 @@ export default {
   build: {
   },
 }
+
+export default config

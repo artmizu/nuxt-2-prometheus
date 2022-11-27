@@ -7,7 +7,7 @@ export default defineBuildConfig({
   outDir,
   entries: [
     'src/module',
-    { input: 'src/runtime/', outDir: `${outDir}/runtime`, ext: 'mjs' },
+    { input: 'src/runtime/', outDir: `${outDir}/runtime`, ext: 'js' },
   ],
   rollup: {
     emitCJS: true,
