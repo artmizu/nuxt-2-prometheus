@@ -11,7 +11,7 @@ export interface AnalyticsModuleState {
       end: number
     }
   }
-  interceptor: BatchInterceptor<(ClientRequestInterceptor | XMLHttpRequestInterceptor)[], HttpRequestEventMap>
+  interceptor?: BatchInterceptor<(ClientRequestInterceptor | XMLHttpRequestInterceptor)[], HttpRequestEventMap>
 }
 
 export interface AnalyticsModuleParams {

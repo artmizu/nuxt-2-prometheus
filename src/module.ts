@@ -32,7 +32,7 @@ const module: Module<AnalyticsModuleParams> = function (moduleOptions) {
     if (!state)
       return
 
-    state.interceptor.dispose()
+    state.interceptor?.dispose()
     const time = calculateTime(state)
     renderTime.labels(state.path).set(time.render)
     requestTime.labels(state.path).set(time.request)
