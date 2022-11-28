@@ -1,6 +1,5 @@
 import { BatchInterceptor } from '@mswjs/interceptors'
-import { XMLHttpRequestInterceptor } from '@mswjs/interceptors/lib/interceptors/XMLHttpRequest'
-import { ClientRequestInterceptor } from '@mswjs/interceptors/lib/interceptors/ClientRequest'
+import nodeInterceptors from '@mswjs/interceptors/lib/presets/node'
 import consola from 'consola'
 import type { Context } from '@nuxt/types'
 import type { AnalyticsModuleParams } from '../type'
@@ -12,10 +11,7 @@ export default (context: Context) => {
   const name = context.route?.matched?.[0]?.name
   const interceptor = new BatchInterceptor({
     name: 'nuxt-analytics',
-    interceptors: [
-      new XMLHttpRequestInterceptor(),
-      new ClientRequestInterceptor(),
-    ],
+    interceptors: nodeInterceptors,
   })
   interceptor.apply()
 

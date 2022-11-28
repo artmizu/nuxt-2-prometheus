@@ -9,11 +9,11 @@ const config: NuxtConfig = {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    MyModule,
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    MyModule,
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
