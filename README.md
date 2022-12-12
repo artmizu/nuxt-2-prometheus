@@ -39,7 +39,7 @@ Once the metrics have been collected by Prometheus, you will want to review them
 ![Cover](https://raw.githubusercontent.com/artmizu/analytics-nuxt-2/main/.github/grafana.jpg)
 
 ## Options
-You can pass it through module options and the nuxt config property `sitemap`.
+You can pass it through module options and the nuxt config property `analytics`.
 
 ### verbose
 - Type: `boolean`
