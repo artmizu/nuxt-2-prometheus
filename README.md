@@ -18,19 +18,19 @@ Allows you to better understand what's going on with your application and how to
 Install package via a package manager: 
 ```bash
 # using npm
-npm install --save-dev @artmizu/nuxt-analytics
+npm install --save-dev @artmizu/analytics-nuxt-2
 
 # using yarm
-yarn add -D @artmizu/nuxt-analytics
+yarn add -D @artmizu/analytics-nuxt-2
 
 # using pnpm
-pnpm add -D @artmizu/nuxt-analytics
+pnpm add -D @artmizu/analytics-nuxt-2
 ```
 
 Add it to a modules section of your nuxt config:
 ```js
 export default {
-  modules: ['@artmizu/nuxt-analytics']
+  modules: ['@artmizu/analytics-nuxt-2']
 }
 ```
 
